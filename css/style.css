@@ -1,0 +1,38 @@
+/************ Reset do CSS ***********/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+
+/************ Variáveis das cores ***********/
+:root{
+    --dourado_pri: #FFD700;
+    --dourado_seg: #DAA520;
+    --branco: white;
+}
+
+/************ estilo do menu de navegação ***********/
+.menu {
+    background-color: var(--dourado_pri);
+    padding: 15px;
+}
+
+.menu p{
+    color: var(--branco)
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+}
+
+.menu a:hover{
+    background-color: var(--dourado_seg);
+}
