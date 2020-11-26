@@ -12,16 +12,16 @@
 		<header>
 			<nav class="menu"> 
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="img/e-Locadora_icon.png" alt="Logo da locadora">
                     </a>
                 </div>
 
                 <div class="opcoes_menu">
-                    <a href="clientes.html">Clientes</a>
-                    <a href="filmes.html">Filmes</a>
-                    <a href="locacao.html">Locação</a>
-                    <a href='contato.html'>Contato</a>
+                    <a href="clientes.php">Clientes</a>
+                    <a href="filmes.php">Filmes</a>
+                    <a href="locacao.php">Locação</a>
+                    <a href='contato.php'>Contato</a>
                 </div>
 			</nav>
         </header>

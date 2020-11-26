@@ -12,7 +12,7 @@
 		<header>
 			<nav class="menu"> 
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="img/e-Locadora_icon.png" alt="Logo da locadora">
                     </a>
                 </div>
@@ -25,5 +25,11 @@
                 </div>
 			</nav>
         </header>
+
+        <section>
+            <h1>Filmes de ouro! <br>Para você que é nosso maior tesouro!</h1>
+        </section>
+        
+       
     </body>
 </html>
