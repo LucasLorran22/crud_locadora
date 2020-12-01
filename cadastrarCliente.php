@@ -15,6 +15,7 @@
         $insert->bindParam(':nome', $nome); //bindParam evita a entrada de SQL injection
         $insert->bindParam(':endereco', $endereco);
         $insert->bindParam(':cidade', $cidade);
+        $insert->bindParam(':uf', $uf);
         $insert->bindParam(':telefone', $telefone);
         $insert->bindParam(':cpf', $cpf);
         $insert->execute();

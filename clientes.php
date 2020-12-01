@@ -41,10 +41,18 @@
 
                         echo "<h3 class='titulo'>Listagem de clientes</h3>";
 
-                        echo "<table border='1'><tr><td>Nome</td><td>Endereço</td><td>Ações</td></tr>";
+                        echo "<table border='1'><tr><td>Nome</td><td>Endereço</td>";
+                        echo "<td>Cidade</td><td>UF</td><td>Telefone</td><td>CPF</td><td>Ações</td></tr>";
 
                         while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)){
-                            echo "<tr><td>$linha[nome]</td><td>$linha[endereco]</td><td><a href='formEditarCliente.php?id=$linha[id]'>Editar</a> - <a href='excluirCliente.php?id=$linha[id]'>Excluir</a></tbd></tr>";
+                            // Colunas da tabela
+                            echo "<tr><td>$linha[nome]</td>";
+                            echo "<td>$linha[endereco]</td>";
+                            echo "<td>$linha[cidade]</td>";
+                            echo "<td>$linha[uf]</td>";
+                            echo "<td>$linha[telefone]</td>";
+                            echo "<td>$linha[cpf]</td>";
+                            echo "<td><a href='formEditarCliente.php?id=$linha[id]'>Editar</a> - <a href='excluirCliente.php?id=$linha[id]'>Excluir</a></tbd></tr>";
                         } 
                         
                         echo "</table>";

@@ -18,6 +18,7 @@
         $update->bindParam(':nome', $nome); 
         $update->bindParam(':endereco', $endereco);
         $update->bindParam(':cidade', $cidade);
+        $update->bindParam(':uf', $uf);
         $update->bindParam(':telefone', $telefone);
         $update->bindParam(':cpf', $cpf);
         $update->execute();

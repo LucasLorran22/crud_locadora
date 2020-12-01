@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>e-Locadora</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="shortcut icon" href="img/disco_logo.png"> 
     </head>
 
