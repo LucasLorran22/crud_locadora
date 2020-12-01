@@ -59,13 +59,16 @@
 
                         echo $consulta->rowCount() . " Registros exibidos";
 
-                        echo "<br><br><a class='teste' href='formCadastroCliente.php'>Novo cadastro</a>";
+                        echo "";
                         
                     } catch(PDOException $e){
                         echo $e->getMessage();
                     }
                     
                 ?>
+
+                <br><br><a class='teste' href='formCadastroCliente.php'>Novo cadastro</a>
+            
             </div>
              
             <center>
