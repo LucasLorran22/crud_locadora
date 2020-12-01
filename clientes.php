@@ -52,7 +52,7 @@
                             echo "<td>$linha[uf]</td>";
                             echo "<td>$linha[telefone]</td>";
                             echo "<td>$linha[cpf]</td>";
-                            echo "<td><a href='formEditarCliente.php?id=$linha[id]'>Editar</a> - <a href='excluirCliente.php?id=$linha[id]'>Excluir</a></tbd></tr>";
+                            echo "<td><a href='formEditarCliente.php?id=$linha[id]'>Editar</a> - <a href='db_ExcluirCliente.php?id=$linha[id]'>Excluir</a></tbd></tr>";
                         } 
                         
                         echo "</table>";

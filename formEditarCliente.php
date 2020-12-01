@@ -36,7 +36,7 @@
 
         <section class="tela_principal">
         
-            <form id="formulario" method="post" action="editarCliente.php">
+            <form id="formulario" method="post" action="db_editarCliente.php">
             <center>
                 <table>
                     <tr><h3>Editar cadastro</h3></tr><br>

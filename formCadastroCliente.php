@@ -28,7 +28,7 @@
         
         <section class="tela_principal">
         
-            <form id="formulario" action="cadastrarCliente.php" method="post">
+            <form id="formulario" action="db_cadastrarCliente.php" method="post">
             <center>
                 <table>
                     <tr><h3>Cadastro de cliente</h3></tr><br>
