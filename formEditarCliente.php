@@ -26,7 +26,7 @@
 			</nav>
         </header>
         <?php
-            include_once "conexao.php"; 
+            include_once "db_conexao.php"; 
 
             $id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
             $consulta = $conectar->query("SELECT * FROM tb_clientes WHERE id = '$id'");

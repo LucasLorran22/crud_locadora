@@ -1,6 +1,6 @@
 <?php
     // Faz a conexão com o banco de dados.
-    include_once "conexao.php"; 
+    include_once "db_conexao.php"; 
 
     try{
         $id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
