@@ -12,13 +12,17 @@
     --branco: white;
 }
 
+
 /************ estilo do menu de navegação ***********/
 .menu {
-    background-color: var(--dourado_pri);
-    padding: 10px;
+    background-color:var(--dourado_pri);
+    padding: 8px;
 
     display: flex;
     flex-direction: row;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .menu .logo{
@@ -38,5 +42,11 @@
 }
 
 .menu .opcoes_menu a:hover{
-    background-color: var(--dourado_seg);
+    background-color: var(--dourado_seg)  ;
+}
+
+/*************************/
+
+input{
+    margin-bottom: 15px;
 }

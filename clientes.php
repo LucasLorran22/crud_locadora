@@ -25,6 +25,44 @@
                 </div>
 			</nav>
         </header>
-        
+            
+            <center>
+            <div class="tela_principal">
+                <?php
+                    // Faz a conexão com o banco de dados.
+                    include_once "conexao.php"; 
+
+                    try {
+
+                        //execução da instrução sql
+                        $consulta = $conectar->query("SELECT * FROM tb_clientes");
+                        
+                        //////////////////////////////////////////////////////////
+
+                        echo "<h3 class='titulo'>Listagem de clientes</h3>";
+
+                        echo "<table border='1'><tr><td>Nome</td><td>Endereço</td><td>Ações</td></tr>";
+
+                        while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)){
+                            echo "<tr><td>$linha[nome]</td><td>$linha[endereco]</td><td><a href='formEditarCliente.php?id=$linha[id]'>Editar</a> - <a href='excluirCliente.php?id=$linha[id]'>Excluir</a></tbd></tr>";
+                        } 
+                        
+                        echo "</table>";
+
+                        echo $consulta->rowCount() . " Registros exibidos";
+
+                        echo "<br><br><a class='teste' href='formCadastroCliente.php'>Novo cadastro</a>";
+                        
+                    } catch(PDOException $e){
+                        echo $e->getMessage();
+                    }
+                    
+                ?>
+            </div>
+             
+            <center>
+       
+
+            
     </body>
 </html>
