@@ -26,11 +26,48 @@
 			</nav>
         </header>
         
-        <section>
+        <center>
+            <div class="tela_principal">
+                    <h3 class='titulo'>Listagem de filmes</h3>
+                <?php
+                    // Faz a conexão com o banco de dados.
+                    include_once "db_conexao.php"; 
+
+                    try {
+
+                        //execução da instrução sql
+                        $consulta = $conectar->query("SELECT * FROM tb_filmes");
+                        
+                        //////////////////////////////////////////////////////////
+
+                        echo "<table border='1'><tr><td>Nome</td><td>Genêro</td>";
+                        echo "<td>Duração</td><td>Varlor da locação</td><td>Quantidade de copias</td><td>Ação</td></tr>";
+
+                        while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)){
+                            // Colunas da tabela
+                            echo "<tr><td>$linha[nomefilme]</td>";
+                            echo "<td>$linha[genero]</td>";
+                            echo "<td>$linha[duracao]</td>";
+                            echo "<td>$linha[valorlocacao]</td>";
+                            echo "<td>$linha[qtdcopias]</td>";
+                            echo "<td><a href='formEditarFilme.php?id=$linha[id]'>Editar</a> - <a href='db_ExcluirFilme.php?id=$linha[id]'>Excluir</a></tbd></tr>";
+                        } 
+                        
+                        echo "</table>";
+
+                        echo $consulta->rowCount() . " Registros exibidos";
+                        
+                    } catch(PDOException $e){
+                        echo $e->getMessage();
+                    }
+                    
+                ?>
+
+                <br><br><a href='formCadastroFilme.php'>Novo filme</a>
+            
+            </div>
+             
             <center>
-                <a href="formCadastroFilme.php">Cadastrar filmes</a>
-            </center>
-        </section>
         
     </body>
 </html>
